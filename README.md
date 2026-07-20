@@ -73,13 +73,3 @@ java -cp out com.dio.aprovacao.Main
 [Gerente] não tem alçada para R$ 50000.00. Encaminhando para o próximo nível...
 Nenhum aprovador na corrente pode autorizar R$ 50000.00. Solicitação recusada.
 ```
-
-## 🚀 Possíveis evoluções (ideias para "dar sua cara" ao projeto)
-
-- Adicionar um novo nível, ex.: `VicePresidente` (limite: R$ 50.000);
-- Trocar a saída no console por uma API REST com Spring Boot;
-- Registrar o histórico de aprovações em uma lista ou banco de dados;
-- Criar testes unitários (JUnit) para cada aprovador.
-
----
-Projeto criado como parte do bootcamp **Santander 2026 - Backend Java com IA (DIO)**.
