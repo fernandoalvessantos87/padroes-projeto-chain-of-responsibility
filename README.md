@@ -4,7 +4,7 @@ Projeto desenvolvido para o desafio de **Padrões de Projeto (Design Patterns)**
 do Bootcamp Santander 2026 (DIO), com foco no padrão **Chain of Responsibility**
 (um dos padrões comportamentais do catálogo GoF), implementado em **Java puro**.
 
-## 💡 O problema
+## O problema
 
 Uma empresa precisa aprovar solicitações de compra, mas cada cargo só pode
 autorizar até um determinado valor:
@@ -17,7 +17,7 @@ autorizar até um determinado valor:
 
 Se ninguém na corrente tiver alçada suficiente, a solicitação é recusada.
 
-## 🎯 Por que Chain of Responsibility?
+## Por que Chain of Responsibility?
 
 Esse padrão evita um monte de `if/else` (ou `switch`) decidindo "quem aprova o
 quê". Em vez disso, cada aprovador só sabe **duas coisas**:
@@ -28,7 +28,7 @@ Isso deixa o código fácil de estender: para adicionar um novo nível de
 aprovação (ex: "Vice-presidente"), basta criar uma nova classe e encaixá-la
 na corrente — nenhuma classe existente precisa ser alterada.
 
-## 🧱 Estrutura do projeto
+## Estrutura do projeto
 
 ```
 src/main/java/com/dio/aprovacao/
@@ -41,7 +41,7 @@ src/main/java/com/dio/aprovacao/
 └── Main.java             -> monta a corrente e simula 4 solicitações
 ```
 
-## ▶️ Como executar
+## Como executar
 
 Pré-requisito: JDK 17+ instalado.
 
@@ -53,7 +53,7 @@ javac -d out $(find src -name "*.java")
 java -cp out com.dio.aprovacao.Main
 ```
 
-## 📤 Saída esperada
+## Saída esperada
 
 ```
 --- Solicitação 1 ---
