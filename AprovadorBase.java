@@ -1,12 +1,6 @@
 package com.dio.aprovacao;
 
-/**
- * Classe abstrata que já resolve a parte "chata" do padrão:
- * guardar a referência do próximo da corrente e repassar a solicitação
- * quando o aprovador atual não tem alçada para aprovar.
- *
- * Assim, cada aprovador concreto só precisa dizer QUAL é o seu limite.
- */
+
 public abstract class AprovadorBase implements Aprovador {
 
     private Aprovador proximo;
